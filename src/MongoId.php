@@ -184,7 +184,7 @@ class MongoId implements \Serializable
             return false;
         }
 
-        return preg_match('/[0-9a-fA-F]{24}/', $id);
+        return preg_match('/^[0-9a-fA-F]{24}$/', $id);
     }
 
     /**
